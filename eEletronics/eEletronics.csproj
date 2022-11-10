@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alterarPassAdm.aspx" />
+    <Content Include="alterarPassUserNormal.aspx" />
+    <Content Include="alterarPassUserRevenda.aspx" />
     <Content Include="ativacao_conta.aspx" />
     <Content Include="backofficeAdm.aspx" />
     <Content Include="carrinhoProjeto.aspx" />
@@ -77,6 +80,7 @@
     <Content Include="css\owl.carousel.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\style.css" />
+    <Content Include="esqueceu_pw.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="homeAdm.aspx" />
@@ -117,10 +121,32 @@
     <Content Include="lojaProjeto.aspx" />
     <Content Include="lojaUserNormal.aspx" />
     <Content Include="lojaUserRevenda.aspx" />
+    <Content Include="recuperar_pw.aspx" />
     <Content Include="registoProjeto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alterarPassAdm.aspx.cs">
+      <DependentUpon>alterarPassAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarPassAdm.aspx.designer.cs">
+      <DependentUpon>alterarPassAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarPassUserNormal.aspx.cs">
+      <DependentUpon>alterarPassUserNormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarPassUserNormal.aspx.designer.cs">
+      <DependentUpon>alterarPassUserNormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarPassUserRevenda.aspx.cs">
+      <DependentUpon>alterarPassUserRevenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarPassUserRevenda.aspx.designer.cs">
+      <DependentUpon>alterarPassUserRevenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ativacao_conta.aspx.cs">
       <DependentUpon>ativacao_conta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,6 +181,13 @@
     </Compile>
     <Compile Include="carrinhoUserRevenda.aspx.designer.cs">
       <DependentUpon>carrinhoUserRevenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esqueceu_pw.aspx.cs">
+      <DependentUpon>esqueceu_pw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esqueceu_pw.aspx.designer.cs">
+      <DependentUpon>esqueceu_pw.aspx</DependentUpon>
     </Compile>
     <Compile Include="homeAdm.aspx.cs">
       <DependentUpon>homeAdm.aspx</DependentUpon>
@@ -220,6 +253,13 @@
       <DependentUpon>lojaUserRevenda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recuperar_pw.aspx.cs">
+      <DependentUpon>recuperar_pw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recuperar_pw.aspx.designer.cs">
+      <DependentUpon>recuperar_pw.aspx</DependentUpon>
+    </Compile>
     <Compile Include="registoProjeto.aspx.cs">
       <DependentUpon>registoProjeto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

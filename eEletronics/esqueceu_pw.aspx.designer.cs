@@ -11,17 +11,17 @@ namespace eEletronics
 {
 
 
-    public partial class loginProjeto
+    public partial class esqueceu_pw
     {
 
         /// <summary>
-        /// tb_user control.
+        /// tb_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_user;
+        protected global::System.Web.UI.WebControls.TextBox tb_email;
 
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -33,22 +33,22 @@ namespace eEletronics
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
-        /// tb_pw control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_pw;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// btn_recuperar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.Button btn_recuperar;
 
         /// <summary>
         /// lbl_mensagem control.
@@ -58,14 +58,5 @@ namespace eEletronics
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_mensagem;
-
-        /// <summary>
-        /// btn_entrar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_entrar;
     }
 }

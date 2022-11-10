@@ -11,61 +11,52 @@ namespace eEletronics
 {
 
 
-    public partial class loginProjeto
+    public partial class recuperar_pw
     {
 
         /// <summary>
-        /// tb_user control.
+        /// lbl_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_user;
+        protected global::System.Web.UI.WebControls.Label lbl_email;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// tb_novaPasse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.TextBox tb_novaPasse;
 
         /// <summary>
-        /// tb_pw control.
+        /// lbl_resultado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_pw;
+        protected global::System.Web.UI.WebControls.Label lbl_resultado;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// btn_confirmar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.Button btn_confirmar;
 
         /// <summary>
-        /// lbl_mensagem control.
+        /// lbl_registar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
-
-        /// <summary>
-        /// btn_entrar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_entrar;
+        protected global::System.Web.UI.WebControls.Label lbl_registar;
     }
 }
