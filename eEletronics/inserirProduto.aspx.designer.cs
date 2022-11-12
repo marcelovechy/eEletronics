@@ -11,70 +11,52 @@ namespace eEletronics
 {
 
 
-    public partial class lojaAdm
+    public partial class inserirProduto
     {
 
         /// <summary>
-        /// tb_pesquisa control.
+        /// tb_nome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_pesquisa;
+        protected global::System.Web.UI.WebControls.TextBox tb_nome;
 
         /// <summary>
-        /// btn_pesquisar control.
+        /// tb_preco control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_pesquisar;
+        protected global::System.Web.UI.WebControls.TextBox tb_preco;
 
         /// <summary>
-        /// btn_nomeAsc control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_nomeAsc;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
-        /// btn_nomeDes control.
+        /// btn_gravar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_nomeDes;
+        protected global::System.Web.UI.WebControls.Button btn_gravar;
 
         /// <summary>
-        /// btn_precoAsc control.
+        /// lbl_mensagem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_precoAsc;
-
-        /// <summary>
-        /// btn_precoDesc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_precoDesc;
-
-        /// <summary>
-        /// rpt_lojaProjeto control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpt_lojaProjeto;
+        protected global::System.Web.UI.WebControls.Label lbl_mensagem;
     }
 }

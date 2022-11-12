@@ -35,7 +35,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();                         
-                //p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
+                p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);
             }
@@ -235,17 +235,5 @@ namespace eEletronics
         }
 
 
-        /*public static List<produto> BuscarProduto()
-
-        {
-
-            var produtos = new List<produto>();
-
-            string queryString = "declare @limit int = 3, @offset int = 1; with resultado as (select*, row_number() over(order by id) as linha from produtos where id is not null )select* from resultado where linha >= @offset and linha<@offset +@limit";
-
-
-
-
-        }*/
     }
 }

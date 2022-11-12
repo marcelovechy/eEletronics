@@ -70,6 +70,7 @@
     <Content Include="alterarPassAdm.aspx" />
     <Content Include="alterarPassUserNormal.aspx" />
     <Content Include="alterarPassUserRevenda.aspx" />
+    <Content Include="alterarProduto.aspx" />
     <Content Include="ativacao_conta.aspx" />
     <Content Include="backofficeAdm.aspx" />
     <Content Include="carrinhoProjeto.aspx" />
@@ -83,6 +84,9 @@
     <Content Include="esqueceu_pw.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="gerirEncomendas.aspx" />
+    <Content Include="gerirProdutos.aspx" />
+    <Content Include="gerirUsers.aspx" />
     <Content Include="homeAdm.aspx" />
     <Content Include="homeProjeto.aspx" />
     <Content Include="homeUserNormal.aspx" />
@@ -110,6 +114,7 @@
     <Content Include="img\product-thumb-2.jpg" />
     <Content Include="img\product-thumb-3.jpg" />
     <Content Include="img\product-thumb-4.jpg" />
+    <Content Include="inserirProduto.aspx" />
     <Content Include="js\bxslider.min.js" />
     <Content Include="js\jquery.easing.1.3.min.js" />
     <Content Include="js\jquery.sticky.js" />
@@ -123,6 +128,7 @@
     <Content Include="lojaUserRevenda.aspx" />
     <Content Include="recuperar_pw.aspx" />
     <Content Include="registoProjeto.aspx" />
+    <Content Include="removerProduto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +152,13 @@
     </Compile>
     <Compile Include="alterarPassUserRevenda.aspx.designer.cs">
       <DependentUpon>alterarPassUserRevenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarProduto.aspx.cs">
+      <DependentUpon>alterarProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarProduto.aspx.designer.cs">
+      <DependentUpon>alterarProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="ativacao_conta.aspx.cs">
       <DependentUpon>ativacao_conta.aspx</DependentUpon>
@@ -189,6 +202,27 @@
     <Compile Include="esqueceu_pw.aspx.designer.cs">
       <DependentUpon>esqueceu_pw.aspx</DependentUpon>
     </Compile>
+    <Compile Include="gerirEncomendas.aspx.cs">
+      <DependentUpon>gerirEncomendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gerirEncomendas.aspx.designer.cs">
+      <DependentUpon>gerirEncomendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gerirProdutos.aspx.cs">
+      <DependentUpon>gerirProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gerirProdutos.aspx.designer.cs">
+      <DependentUpon>gerirProdutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gerirUsers.aspx.cs">
+      <DependentUpon>gerirUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gerirUsers.aspx.designer.cs">
+      <DependentUpon>gerirUsers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homeAdm.aspx.cs">
       <DependentUpon>homeAdm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +250,13 @@
     </Compile>
     <Compile Include="homeUserRevenda.aspx.designer.cs">
       <DependentUpon>homeUserRevenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inserirProduto.aspx.cs">
+      <DependentUpon>inserirProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inserirProduto.aspx.designer.cs">
+      <DependentUpon>inserirProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="loginProjeto.aspx.cs">
       <DependentUpon>loginProjeto.aspx</DependentUpon>
@@ -266,6 +307,13 @@
     </Compile>
     <Compile Include="registoProjeto.aspx.designer.cs">
       <DependentUpon>registoProjeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="removerProduto.aspx.cs">
+      <DependentUpon>removerProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removerProduto.aspx.designer.cs">
+      <DependentUpon>removerProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="templateAdm.Master.cs">
       <DependentUpon>templateAdm.Master</DependentUpon>
