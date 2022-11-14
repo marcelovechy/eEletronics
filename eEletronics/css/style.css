@@ -733,6 +733,18 @@ input[type="submit"], button[type=submit] {
     margin-top: 7%;
     width: 52%;
 }
+
+/*BOTAO NOVO*/
+.button1{
+    background: none repeat scroll 0 0 #5a88ca;
+    border: medium none;
+    color: #fa8072;
+    padding: 11px 20px;
+    text-transform: uppercase;
+    margin-top: 7%;
+    width: 52%;
+}
+
 input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
 .single-sidebar input[type="text"] {
     margin-bottom: 10px;
@@ -1049,6 +1061,22 @@ div.cart-collaterals ul.products li.product .price ins {
     font-size: 20px;
     text-transform: uppercase;
 }
+
+#customer_details1 label {
+    display: block;
+    margin: 0 0 5px;
+}
+
+#customer_details1 input[type="text"], #customer_details textarea, .shipping_calculator input[type=text] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#customer_details1 h3 {
+    color: #5a88ca;
+    font-size: 20px;
+    text-transform: uppercase;
+}
 .create-account {
     background: none repeat scroll 0 0 #f4f4f4;
     margin-bottom: 50px;
@@ -1080,6 +1108,12 @@ a.about_paypal {
   width: 100%;
 }
 
+#customer_details1 select, .shipping_calculator select {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
 
 table.shop_table td.product-remove a {
   display: inline-block;

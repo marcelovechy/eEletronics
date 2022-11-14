@@ -11,17 +11,17 @@ namespace eEletronics
 {
 
 
-    public partial class alterarProduto
+    public partial class alterarUser
     {
 
         /// <summary>
-        /// ddl_produtos control.
+        /// ddl_user control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl_produtos;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_user;
 
         /// <summary>
         /// SqlDataSource1 control.
@@ -33,13 +33,13 @@ namespace eEletronics
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// rpt_produtos control.
+        /// rpt_user control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpt_produtos;
+        protected global::System.Web.UI.WebControls.Repeater rpt_user;
 
         /// <summary>
         /// tb_novoNome control.
@@ -51,22 +51,49 @@ namespace eEletronics
         protected global::System.Web.UI.WebControls.TextBox tb_novoNome;
 
         /// <summary>
-        /// tb_novoPreco control.
+        /// ddl_perfil control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_novoPreco;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_perfil;
 
         /// <summary>
-        /// fUpload control.
+        /// SqlDataSource2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fUpload;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+
+        /// <summary>
+        /// EntityDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.EntityDataSource EntityDataSource1;
+
+        /// <summary>
+        /// tb_novoEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_novoEmail;
+
+        /// <summary>
+        /// tb_novoMorada control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_novoMorada;
 
         /// <summary>
         /// btn_gravar control.

@@ -67,10 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alterarEncomenda.aspx" />
     <Content Include="alterarPassAdm.aspx" />
     <Content Include="alterarPassUserNormal.aspx" />
     <Content Include="alterarPassUserRevenda.aspx" />
     <Content Include="alterarProduto.aspx" />
+    <Content Include="alterarUser.aspx" />
     <Content Include="ativacao_conta.aspx" />
     <Content Include="backofficeAdm.aspx" />
     <Content Include="carrinhoProjeto.aspx" />
@@ -114,7 +116,9 @@
     <Content Include="img\product-thumb-2.jpg" />
     <Content Include="img\product-thumb-3.jpg" />
     <Content Include="img\product-thumb-4.jpg" />
+    <Content Include="inserirEncomenda.aspx" />
     <Content Include="inserirProduto.aspx" />
+    <Content Include="inserirUser.aspx" />
     <Content Include="js\bxslider.min.js" />
     <Content Include="js\jquery.easing.1.3.min.js" />
     <Content Include="js\jquery.sticky.js" />
@@ -128,10 +132,19 @@
     <Content Include="lojaUserRevenda.aspx" />
     <Content Include="recuperar_pw.aspx" />
     <Content Include="registoProjeto.aspx" />
+    <Content Include="removerEncomenda.aspx" />
     <Content Include="removerProduto.aspx" />
+    <Content Include="removerUser.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alterarEncomenda.aspx.cs">
+      <DependentUpon>alterarEncomenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarEncomenda.aspx.designer.cs">
+      <DependentUpon>alterarEncomenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="alterarPassAdm.aspx.cs">
       <DependentUpon>alterarPassAdm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +172,13 @@
     </Compile>
     <Compile Include="alterarProduto.aspx.designer.cs">
       <DependentUpon>alterarProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarUser.aspx.cs">
+      <DependentUpon>alterarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarUser.aspx.designer.cs">
+      <DependentUpon>alterarUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="ativacao_conta.aspx.cs">
       <DependentUpon>ativacao_conta.aspx</DependentUpon>
@@ -251,12 +271,26 @@
     <Compile Include="homeUserRevenda.aspx.designer.cs">
       <DependentUpon>homeUserRevenda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="inserirEncomenda.aspx.cs">
+      <DependentUpon>inserirEncomenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inserirEncomenda.aspx.designer.cs">
+      <DependentUpon>inserirEncomenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="inserirProduto.aspx.cs">
       <DependentUpon>inserirProduto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="inserirProduto.aspx.designer.cs">
       <DependentUpon>inserirProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inserirUser.aspx.cs">
+      <DependentUpon>inserirUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inserirUser.aspx.designer.cs">
+      <DependentUpon>inserirUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="loginProjeto.aspx.cs">
       <DependentUpon>loginProjeto.aspx</DependentUpon>
@@ -308,12 +342,26 @@
     <Compile Include="registoProjeto.aspx.designer.cs">
       <DependentUpon>registoProjeto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="removerEncomenda.aspx.cs">
+      <DependentUpon>removerEncomenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removerEncomenda.aspx.designer.cs">
+      <DependentUpon>removerEncomenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="removerProduto.aspx.cs">
       <DependentUpon>removerProduto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="removerProduto.aspx.designer.cs">
       <DependentUpon>removerProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="removerUser.aspx.cs">
+      <DependentUpon>removerUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removerUser.aspx.designer.cs">
+      <DependentUpon>removerUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="templateAdm.Master.cs">
       <DependentUpon>templateAdm.Master</DependentUpon>

@@ -88,6 +88,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();
+                p.preco_desconto = dr["preco_desconto"].ToString();
                 p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);
@@ -123,6 +124,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();
+                //p.preco_desconto = dr["preco_desconto"].ToString();
                 p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);
@@ -158,6 +160,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();
+                //p.preco_desconto = dr["preco_desconto"].ToString();
                 p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);
@@ -192,6 +195,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();
+               // p.preco_desconto = dr["preco_desconto"].ToString();
                 p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);
@@ -226,6 +230,7 @@ namespace eEletronics
 
                 p.nome = dr["nome"].ToString();
                 p.preco = dr["preco"].ToString();
+                //p.preco_desconto = dr["preco_desconto"].ToString();
                 p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
 
                 lst_eletronicos.Add(p);

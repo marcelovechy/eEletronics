@@ -69,11 +69,11 @@ namespace eEletronics
                 Session["perfil"] = perfil; 
                 Session["user"] = tb_user.Text;
 
-                if (perfil == "Administrador")
+                if (perfil == "adm")
                 {
-                    Response.Redirect("homeAdmin.aspx");
+                    Response.Redirect("homeAdm.aspx");
                 }
-                else if (perfil == "Revenda")
+                else if (perfil == "user_normal")
                 {
                     Response.Redirect("homeUserNormal.aspx");
                 }

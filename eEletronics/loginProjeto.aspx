@@ -24,7 +24,7 @@
                         </div>
 
                          <div class="newsletter-forme">
-                             <asp:TextBox ID="tb_pw" runat="server" type="text"  name="cf-name" placeholder=" Palavra-passe"  Width="350px"></asp:TextBox>
+                             <asp:TextBox ID="tb_pw" runat="server" type="text"  name="cf-name" placeholder=" Palavra-passe"  Width="350px" TextMode="Password"></asp:TextBox>
                              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_pw" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                              <br />
                              <br />

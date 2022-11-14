@@ -16,22 +16,21 @@ namespace eEletronics
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (Session["perfil"] == null || Session["perfil"].ToString() != "Administrador")
+            //{
+            //    Response.Redirect("login.aspx");
+            //}
 
-        }
-
-        //MOSTRA O PRODUTO A SER ALTERADO
-        protected void ddl_prod_SelectedIndexChanged(object sender, EventArgs e)
-        {
             try
             {
 
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bd_loja_onlineConnectionString"].ConnectionString);
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["eEletronicsConnectionString"].ConnectionString);
 
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.AddWithValue("@produto", ddl_prod.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@produto", ddl_produtos.Text);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "mostrarProd";
+                cmd.CommandText = "mostra_produto";
 
                 cmd.Connection = conn;
                 conn.Open();
@@ -44,10 +43,9 @@ namespace eEletronics
                     produtos p = new produtos();
 
                     p.nome = dr["nome"].ToString();
-                    p.preco = Convert.ToInt32(dr["preco"]);
-                    p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["dadosBinarios"]);
-                    //Response.ContentType = dr["contentType"].ToString();
-                    //Response.BinaryWrite((byte[])dr["dadosBinarios"]);
+                    p.preco = dr["preco"].ToString();
+                    p.foto = "data:image/jpg;base64," + Convert.ToBase64String((byte[])dr["foto"]);
+
 
                     listaProdutos.Add(p);
                 }
@@ -64,60 +62,70 @@ namespace eEletronics
             }
         }
 
-        //ALTERA O PRODUTO PREVIAMENTE SELECIONADO
-        protected void btn_alterarProduto_Click(object sender, EventArgs e)
+
+    
+
+    //MOSTRA O PRODUTO A SER ALTERADO
+
+
+
+
+
+
+    //ALTERA O PRODUTO PREVIAMENTE SELECIONADO
+    protected void btn_alterarProduto_Click(object sender, EventArgs e)
+    {
+        try
         {
-            try
-            {
 
-                Stream ficheiro = fu_nova.PostedFile.InputStream;
-                int fichTamanho = fu_nova.PostedFile.ContentLength;
-                string fichNome = tb_novo_nome.Text;
-                string fichPreco = tb_novo_preco.Text;
+            Stream imagem = fUpload.PostedFile.InputStream;
+            int imagemTamanho = fUpload.PostedFile.ContentLength;
+            string imagemNome = tb_novoNome.Text;
+            string imagemPreco = tb_novoPreco.Text;
 
-                byte[] fichBinaryData = new byte[fichTamanho];
-                ficheiro.Read(fichBinaryData, 0, fichTamanho);
+            byte[] imagemBinary = new byte[imagemTamanho];
+            imagem.Read(imagemBinary, 0, imagemTamanho);
 
 
 
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bd_loja_onlineConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["eEletronicsConnectionString"].ConnectionString);
 
-                SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.AddWithValue("@nome_antigo", ddl_prod.SelectedItem.Text);
-                cmd.Parameters.AddWithValue("@nome", fichNome);
-                cmd.Parameters.AddWithValue("@preco", fichPreco);
-                cmd.Parameters.AddWithValue("@arrayBytes", fichBinaryData);
+            cmd.Parameters.AddWithValue("@nome_antigo", ddl_produtos.Text);
+            cmd.Parameters.AddWithValue("@nome", imagemNome);
+            cmd.Parameters.AddWithValue("@preco", imagemPreco);
+            cmd.Parameters.AddWithValue("@foto", imagemBinary);
 
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "alterarFicheiro";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "alterar_produto";
 
-                cmd.Connection = conn;
-                conn.Open();
-                cmd.ExecuteNonQuery();
+            cmd.Connection = conn;
+            conn.Open();
+            cmd.ExecuteNonQuery();
 
-                conn.Close();
+            conn.Close();
 
-                lb_mensagem.Visible = true;
-                lb_mensagem.Text = "Sucesso!";
+            lbl_mensagem.Visible = true;
+            lbl_mensagem.Text = "Alterado com sucesso!";
 
-                Page.Response.Redirect(Page.Request.Url.ToString(), true);
+            
 
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
-
-        public class produtos
+        catch (Exception ex)
         {
-            public string nome { get; set; }
-            public int preco { get; set; }
-            public string foto { get; set; }
+
         }
     }
-}
 
+    public class produtos
+    {
+        public string nome { get; set; }
+        public string preco { get; set; }
+        public string foto { get; set; }
     }
+
 }
+            
+    }
+

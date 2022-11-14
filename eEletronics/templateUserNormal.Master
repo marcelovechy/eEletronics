@@ -110,7 +110,7 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="homeUserNormal.aspx">Home</a></li>
+                        <li><a href="homeUserNormal.aspx">Home</a></li>
                         <li><a href="lojaUserNormal.aspx">Shop page</a></li>
                         <li><a href="carrinhoUserNormal.aspx">Cart</a></li>                 
                         <li><a href="checkoutUserNormal.aspx">Checkout</a></li>
@@ -208,6 +208,19 @@
     <script type="text/javascript" src="js/bxslider.min.js"></script>
 	<script type="text/javascript" src="js/script.slider.js"></script>
 
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/636d41d3b0d6371309ce64e6/1ghhci9b7';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
         <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

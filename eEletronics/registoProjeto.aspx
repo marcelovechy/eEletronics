@@ -29,7 +29,7 @@
 
                                     <p id="billing_last_name_field" class="form-row form-row-last validate-required">
                                         <label class="" for="billing_last_name">Palavra-passe<abbr title="required" class="required">*</abbr></label>
-                                        <asp:TextBox ID="tb_pw" runat="server" class="input-text "></asp:TextBox>
+                                        <asp:TextBox ID="tb_pw" runat="server" class="input-text " TextMode="Password"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_pw" ErrorMessage="*" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                                     </p>
 

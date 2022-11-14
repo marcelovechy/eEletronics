@@ -170,7 +170,7 @@ namespace eEletronics
 
             try
             {
-                mail.From = new MailAddress("agatha.vechy.t0121524@edu.atec.pt");
+                mail.From = new MailAddress("");
                 mail.To.Add(new MailAddress(tb_email.Text));
                 mail.Subject = "Ativação de conta";
                 mail.IsBodyHtml = true;
@@ -180,7 +180,7 @@ namespace eEletronics
                 servidor.Port = 587;
 
                 servidor.Credentials = new NetworkCredential
-                    ("agatha.vechy.t0121524@edu.atec.pt", "Am190513@");
+                    ("");
 
                 servidor.EnableSsl = true;
                 servidor.Send(mail);
