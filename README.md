@@ -5,7 +5,8 @@ Objetivo do projeto
 
 A loja terá um backoffice, que apenas os utilizadores com perfil de “Admin” conseguem entrar e que permite fazer a gestão de utilizadores, produtos e encomendas.
 
-O frontend apresenta os produtos aos utilizadores e permite adicionar ao carrinho. No momento do cliente finalizar a encomenda, este deverá autenticar-se para poder finalizar o processo. Caso não tenha conta deverá poder registar-se ou recuperar a sua palavra-passe.
+O frontend apresenta os produtos aos utilizadores e permite adicionar ao carrinho. 
+No momento do cliente finalizar a encomenda, este deverá autenticar-se para poder finalizar o processo. Caso não tenha conta deverá poder registar-se ou recuperar a sua palavra-passe.
 
 Requisitos:
 • Apresentação de montra de produtos com possibilidade de ordenação dos produtos por nome do produto e pelo preço de forma ascendente e descendente.
