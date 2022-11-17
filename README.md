@@ -1,5 +1,4 @@
 # eEletronics
-Versão final não desenvolvida.
 
 
 Objetivo do projeto
